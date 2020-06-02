@@ -40,11 +40,7 @@ $mail->Body    = '
 	E-mail: ' . $email . ' <br>
 	Сообщение: ' . $subject . ' ';
 
-if(!$mail->send()){
-echo 'Письмо отправлено!';
-} else {
-  echo 'Ошибка: ' . $mail->ErrorInfo;
-} 
+if(!$mail->send())
   {
     return false;
 } else {
